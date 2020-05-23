@@ -1,4 +1,4 @@
-var passwords = ['huntzor123huesos', 'thrustcq1209sosetUmenya', 'FedShat123prostoPidor', 'senkodev456098Anal', 'senko1space'];
+var passwords = ['Я гей', 'скажи 300', 'трололо сука', 'хуй тебе а не пороль отпороть тебя', 'Фу, пидор'];
 var indexOld;
 var index = Math.floor((Math.random() * passwords.length));
 var password = passwords[index];
