@@ -796,6 +796,36 @@ properly.
 	text-align: center !important;
 }
 
+.container {   width: 75%;
+   border: 2px solid rgba(24, 138, 190, 0.1);
+   background-color: rgba(24, 138, 190, 0.1);
+   border-radius: 15px; /* скругление углов блока */
+   padding: 10px; /* внутренние поля */
+   margin: 10px auto; /* внешние отступы */
+ }
+ .container img {
+   float: left; /* обтекание слева */
+   margin-right: 10px; /* пространство между аватаркой и абзацем */
+   border-radius: 30%; /* скругляет аватарку */
+   width: 90px;
+ }
+ 
+ .container span {
+   font-size: 25px;
+   color: rgb(255, 255, 255);
+   margin-right: 10px;
+ }
+      button {
+         color: rgb(255, 255, 255); /* цвет текста */
+         text-decoration: none; /* убирать подчёркивание у ссылок */
+         user-select: none; /* убирать выделение текста */
+         background: rgb(17,171,176); /* фон кнопки */
+         padding: .7em 1.5em; /* отступ от текста */
+         outline: none; /* убирать контур в Mozilla */
+       } 
+       button:hover { background: rgb(38, 125, 128); } /* при наведении курсора мышки */
+       button:active { background: rgb(18, 106, 109); } /* при нажатии */
+
 
 
 
