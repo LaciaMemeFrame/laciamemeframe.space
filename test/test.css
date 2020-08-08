@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #000000;
+  height: 100vh;
+  width: 100vw;
+}
+
+span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #cf1b1b;
+  font-size: 74px;
+  letter-spacing: 16px;
+}
+
+span:before {
+  content: "LaciaMemeFrame";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    #f09ae9 2px,
+    #f09ae9 4px
+  );
+  
+  -webkit-background-clip: text;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+span:after {
+  content: "LaciaMemeFrame";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    #ffd571 2px,
+    #ffd571 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  transition: 1s;
+}
+
+span:after {
+    content: "LaciaMemeFrame";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 2px,
+      #717aff 2px,
+      #717aff 4px
+    );
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    transition: 1s;
+  }
+
+span:hover:before {
+  top: 8px;
+  left: 8px;
+}
+
+span:hover:after {
+  top: -8px;
+  left: -8px;
+  text-shadow: -8px -8px #318fb5;
+}
+
+
