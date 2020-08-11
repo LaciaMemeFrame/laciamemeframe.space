@@ -94,7 +94,7 @@ span:hover:after {
   left: 0;
   overflow: hidden;
   z-index: 1;
-  background: url(anime.png) no-repeat #000000;
+  background: url(https://raw.githubusercontent.com/LaciaMemeFrame/laciamemeframe.space/master/anime.png) no-repeat #000000;
   background-size: cover;
 }
 
