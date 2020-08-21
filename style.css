@@ -18,7 +18,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Preloader */
 
-.page-preloader{position: fixed;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;}
+.page-preloader{position: fixed;top: 0;bottom: 0;width: 100%;z-index:100000;background:#000000 url("img/pageload-spinner.gif") no-repeat center center;}
 
 /* = Blocs
 -------------------------------------------------------------- */
@@ -45,6 +45,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 .bloc-lg{
 	padding:100px 50px;
+}
+.bloc-sm{
+	padding:20px 50px;
 }
 
 /* = Full Screen Blocs 
@@ -78,6 +81,26 @@ a:hover{text-decoration: none; cursor:pointer;}
 	align-self: flex-end;
 }
 
+/* = Full Width Blocs 
+-------------------------------------------------------------- */
+
+.full-width-bloc{
+	padding-left:0;
+	padding-right:0;
+}
+.full-width-bloc .row{
+	margin-left:0;
+	margin-right:0;
+}
+.full-width-bloc .container{
+	width:100%;
+	max-width:100%!important;
+}
+.full-width-bloc .carousel img{
+	width:100%;
+	height:auto;
+}
+
 
 /* Background Styles */
 
@@ -109,19 +132,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	z-index: 0;
 }
 
-
-/* Background Effects */
-
-.b-parallax{
-	background-attachment:fixed;
-}
-
-/* Disable Parallax on Mobile Touch Devices */
-@media (hover: none) {
-	.b-parallax{
-	background-attachment:scroll;
-}
-}
 
 /* Dark theme */
 
@@ -201,6 +211,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
 }
+/* Dividers */
+
+.b-divider{
+	border-top:1px solid rgba(0,0,0,.1);
+	border-bottom:1px solid rgba(0,0,0,.1);
+}
 
 
 /* = NavBar
@@ -209,6 +225,19 @@ a:hover{text-decoration: none; cursor:pointer;}
 .hero .hero-nav{
 	padding-left:inherit;
 	padding-right:inherit;
+}
+.navbar-dark .nav .dropdown-menu .nav-link{
+	color: rgb(64, 64, 64);
+}
+/* Rounded Bars Menu Icon */
+.navbar-light .menu-icon-rounded-bars .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-dark .menu-icon-rounded-bars .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggle.menu-icon-rounded-bars{
+	margin-top:7px!important;
 }
 /* Handle Multi Level Navigation */.navbar-light .navbar-nav .nav-link {
 	color: rgb(64, 64, 64);
@@ -310,6 +339,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .h4-style{
 	font-size:20px;
+	font-family:"Open Sans";
+	font-weight:800;
 }
 .icon-margin-left{
 	margin-left:-26px;
@@ -326,6 +357,17 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	letter-spacing:0px;
 	font-size:16px;
 	line-height:19px;
+	font-family:"Open Sans";
+	font-weight:800;
+}
+.link-style{
+	text-decoration:none;
+	font-style:normal;
+	font-weight:normal;
+}
+.h2-style{
+	font-family:"Open Sans";
+	font-weight:800;
 }
 
 /* = Colour
@@ -353,6 +395,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .ltc-white:hover{
 	color:#cccccc!important;
+}
+.ltc-fuchsia{
+	color:#FF00FF!important;
+}
+.ltc-fuchsia:hover{
+	color:#cc00cc!important;
 }
 
 /* Icon colour styles */
@@ -453,4 +501,34 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	
 }
+
+.reviews {   width: 75%;
+	border: 2px solid rgba(176, 17, 142);
+	background-color: rgba(146, 21, 119, 0.26);
+	border-radius: 15px; /* скругление углов блока */
+	padding: 10px; /* внутренние поля */
+	margin: 10px auto; /* внешние отступы */
+  }
+  .reviews img {
+	float: left; /* обтекание слева */
+	margin-right: 10px; /* пространство между аватаркой и абзацем */
+	border-radius: 30%; /* скругляет аватарку */
+	width: 90px;
+  }
+  
+  .reviews span {
+	font-size: 25px;
+	color: rgb(255, 255, 255);
+	margin-right: 10px;
+  }
+  button {
+	color: rgb(255, 255, 255); /* цвет текста */
+	text-decoration: none; /* убирать подчёркивание у ссылок */
+	user-select: none; /* убирать выделение текста */
+	background: rgb(176, 17, 142); /* фон кнопки */
+	padding: .7em 1.5em; /* отступ от текста */
+	outline: none; /* убирать контур в Mozilla */
+		} 
+		button:hover { background: rgb(150, 18, 121); } /* при наведении курсора мышки */
+		button:active { background: rgb(114, 13, 92); } /* при нажатии */
 
